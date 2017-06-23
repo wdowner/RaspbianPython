@@ -1,0 +1,22 @@
+Getting evdev for python2 on raspbian
+
+First try:
+$ sudo apt-get install libpython2.7-dev
+$ sudo pip install evdev
+
+start python2 idle by typing: 
+$ python
+
+Try to import evdev:
+>>> import evdev
+
+If that doesn't work then try:
+$ apt-get install python-dev python-pip gcc
+$ apt-get install linux-headers-$(uname -r)
+
+start python2 idle by typing: 
+$ python
+
+Try to import evdev:
+>>> import evdev
+
